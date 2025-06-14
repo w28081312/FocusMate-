@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "FocusMate",
+  "version": "1.0",
+  "description": "鼓勵 ADHD 使用者在網頁上專注閱讀的 Chrome 插件。",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
